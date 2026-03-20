@@ -66,7 +66,11 @@ const projectCards = [
 const projectGrid = document.querySelector('.project-grid');
 
 function displayRecentProjects() {
-    // 1. Sort by date (handling '#' as oldest) and slice the top 3
+    // error handler
+    if (!projectGrid) {
+        return;
+    }
+    // Sort method where # placeholder is set as 0 and converting string into int in miliseconds from 1970
     const recentOnes = projectCards
         .sort((a, b) => {
             const dateA = a.date === "#" ? new Date(0) : new Date(a.date);
@@ -75,7 +79,7 @@ function displayRecentProjects() {
         })
         .slice(0, 3);
 
-    // 2. Map the data into your HTML structure
+    // Creates the innerHTML
     const projectHTML = recentOnes.map(project => `
         <article class="project-card">
             <img src="${project.image}" alt="${project.title}">
@@ -88,11 +92,10 @@ function displayRecentProjects() {
                 <a href="${project.link}">View Project</a>
             </div>
         </article>
-    `).join(''); // Join turns the array of strings into one big string
+    `).join('');
 
-    // 3. Inject it into the grid
+    // Injects the html
     projectGrid.innerHTML = projectHTML;
 }
 
-// Run the function when the page loads
 displayRecentProjects();
