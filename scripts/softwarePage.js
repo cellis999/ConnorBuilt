@@ -8,7 +8,7 @@ function renderSoftwareProjects() {
 
     const projectHTML = softwareProjects.map(project => `
         <article class="software-card">
-            <div class="card-image">
+            <div class="card-image-pages">
                 <img src="${project.image}" alt="${project.title}">
             </div>
             <div class="card-info">

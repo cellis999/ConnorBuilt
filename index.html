@@ -12,7 +12,12 @@
     <div class="container">
 
         <header>
+            <div class="logo">
+                <a href="index.html">
+                <img src="images/logo.png">
             <div class="logo">ConnorBuilt</div>
+            </a>
+            </div>
             <nav>
                 <ul>
                     <li><a href="pages/software.html">Software</a></li>
@@ -35,7 +40,7 @@
                 <div class="hero-content">
                     <h1>Hi! I'm Connor!</h1>
                     <div class="bio-text">
-                        <p>Text 1</p>
+                        <p>I am a senior and a computer engineer, with a minor in computer programming, up at BYU-Idaho! I enjoy working with computers on both the software and hardware side, and wanted a place to document all my projects. Feel free to look around!</p>
                     </div>
                 </div>
             </section>
@@ -59,4 +64,11 @@
     </div>
 
 </body>
+<footer>
+  <p>&copy; <span id="year"></span> ConnorBuilt. All rights reserved.</p>
+</footer>
+<script>
+    const yearSpan = document.getElementById('year');
+    yearSpan.textContent = new Date().getFullYear();
+</script>
 </html>

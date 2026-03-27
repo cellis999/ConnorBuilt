@@ -12,7 +12,12 @@
 
     <div class="container">
         <header>
+            <div class="logo">
+                <a href="../index.html">
+                <img src="../images/logo.png">
             <div class="logo">ConnorBuilt</div>
+            </a>
+            </div>
             <nav>
                 <ul>
                     <li><a href="software.html" class="active">Software</a></li>
@@ -22,7 +27,7 @@
             </nav>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/co-ellis/" target="_blank">
-                    <img src="images/linkedin.webp" alt="LinkedIn"/>
+                    <img src="../images/linkedin.webp" alt="LinkedIn"/>
                 </a>
             </div>
         </header>
@@ -31,7 +36,7 @@
             <section class="page-header">
                 <h1>Software</h1>
                 <div class="header-description">
-                    <p>Text 2</p>
+                    <p>This page holds all my software projects. My specifications for software projects are anything that is fully digital, such as websites or programs I have written.</p>
                 </div>
             </section>
 
@@ -41,4 +46,11 @@
     </div>
 
 </body>
+<footer>
+  <p>&copy; <span id="year"></span> ConnorBuilt. All rights reserved.</p>
+</footer>
+<script>
+    const yearSpan = document.getElementById('year');
+    yearSpan.textContent = new Date().getFullYear();
+</script>
 </html>

@@ -3,7 +3,7 @@ const projectCards = [
         title: "RC Car",
         category: "Both",
         subcategory: "Embedded Systems",
-        image: "#",
+        image: "../images/rcCar.jpg",
         link: "#",
         date: "2025-12-11"
     },
@@ -12,7 +12,7 @@ const projectCards = [
         title: "DC Power Supply",
         category: "Hardware",
         subcategory: "Chip Design",
-        image: "#",
+        image: "../images/hardwarePlaceholder.png",
         link: "#",
         date: "#"
     },
@@ -21,7 +21,7 @@ const projectCards = [
         title: "CocoLab",
         category: "Software",
         subcategory: "Website and Service Design",
-        image: "#",
+        image: "../images/softwarePlaceholder.jpg",
         link: "#",
         date: "2026-03-20"
     },
@@ -30,7 +30,7 @@ const projectCards = [
         title: "Speaker System PCBs",
         category: "Hardware",
         subcategory: "PCB Design",
-        image: "#",
+        image: "../images/hardwarePlaceholder.png",
         link: "#",
         date: "#"
     },
@@ -39,7 +39,7 @@ const projectCards = [
         title: "Personal Portfolio",
         category: "Software",
         subcategory: "Web Design",
-        image: "#",
+        image: "../images/softwarePlaceholder.jpg",
         link: "#",
         date: "#"
     },
@@ -48,7 +48,7 @@ const projectCards = [
         title: "Portal and Projects",
         category: "Software",
         subcategory: "Web Design",
-        image: "#",
+        image: "../images/softwarePlaceholder.jpg",
         link: "#",
         date: "#"
     },
@@ -57,7 +57,7 @@ const projectCards = [
         title: "CommanderCon",
         category: "Software",
         subcategory: "Back-End Web Development",
-        image: "#",
+        image: "../images/softwarePlaceholder.jpg",
         link: "#",
         date: "#"
     }
@@ -82,7 +82,9 @@ function displayRecentProjects() {
     // Creates the innerHTML
     const projectHTML = recentOnes.map(project => `
         <article class="project-card">
+        <div class="card-image">
             <img src="${project.image}" alt="${project.title}">
+            </div>
             <div class="card-content">
                 <h3>${project.title}</h3>
                 <p class="subcategory">${project.subcategory}</p>
