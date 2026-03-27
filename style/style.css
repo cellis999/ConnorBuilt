@@ -126,8 +126,8 @@ nav a:hover {
   margin: 0;
 }
 
-.hero-image img{
-  max-height: 350px;
+.hero-image img {
+  height: 350px;
 }
 
 .hero-description {
