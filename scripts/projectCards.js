@@ -21,7 +21,7 @@ const projectCards = [
         title: "CocoLab",
         category: "Software",
         subcategory: "Website and Service Design",
-        image: "../images/softwarePlaceholder.jpg",
+        image: "images/softwarePlaceholder.jpg",
         link: "#",
         date: "2026-03-20"
     },
