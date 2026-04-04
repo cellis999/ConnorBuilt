@@ -68,7 +68,7 @@ nav ul {
 nav a {
   color: var(--text-dim);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   transition: 0.3s;
 }
@@ -128,6 +128,7 @@ nav a:hover {
 
 .hero-image img {
   height: 350px;
+  border-radius: 10px;
 }
 
 .hero-description {
@@ -241,6 +242,18 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: center;
+}
+
+#projectlink a {
+  text-decoration: none;
+  color:#007bff;
+  transition: 0.3s;
+}
+
+#projectlink a:hover {
+  color: var(--glow-blue);
+  text-shadow: 0 0 10px var(--accent-blue);
 }
 
 .social-links a{
@@ -342,6 +355,10 @@ nav a:hover {
 .card-image-pages img {
   width: 100%;
   height: 100%;
+}
+
+footer {
+  padding-left: 30px;
 }
 
 /* Make it responsive for mobile */

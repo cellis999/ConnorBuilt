@@ -81,17 +81,19 @@ function displayRecentProjects() {
 
     // Creates the innerHTML
     const projectHTML = recentOnes.map(project => `
-        <article class="project-card">
-        <div class="card-image">
-            <img src="${project.image}" alt="${project.title}">
+        <article class="hardware-card">
+            <div class="card-image-pages">
+                <img src="${project.image}" alt="${project.title}">
             </div>
-            <div class="card-content">
-                <h3>${project.title}</h3>
-                <p class="subcategory">${project.subcategory}</p>
+            <div class="card-info">
                 <time datetime="${project.date}">
-                    ${project.date === "#" ? "Coming Soon" : project.date}
+                    ${project.date === "#" ? "In Progress" : project.date}
                 </time>
-                <a href="${project.link}">View Project</a>
+                <div class="description-box">
+                    <h3>${project.title}</h3>
+                    <p>${project.subcategory}</p>
+                </div>
+                <a href="${project.link}" class="view-project-btn">View Project</a>
             </div>
         </article>
     `).join('');
